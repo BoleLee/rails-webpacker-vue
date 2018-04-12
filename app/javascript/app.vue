@@ -19,7 +19,9 @@ export default {
   },
   methods: {
     modTest() {
-      this.$store.commit('updateTest', 'test的新值')
+      this.$store.commit('updateTest', '这是修改后的值')
+      console.log('updateTest后，test的值为：' + this.$store.state.test)
+      this.$Message.info(`test的新值应为：${this.$store.state.test}`)
     }
   }
 }
