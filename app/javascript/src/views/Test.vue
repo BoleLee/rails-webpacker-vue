@@ -12,8 +12,6 @@
 </template>
 
 <script>
-import store from '../store'
-
 export default {
   data: function () {
     return {
@@ -21,28 +19,28 @@ export default {
   },
   computed: {
     test() {
-      return store.state.test
+      return this.$store.state.test
     },
     count () {
-      return store.state.count
+      return this.$store.state.count
     }
   },
   methods: {
     increment () {
-      store.commit('increment')
+      this.$store.commit('increment')
     },
     decrement () {
-      store.commit('decrement')
+      this.$store.commit('decrement')
     },
     updateTest() {
-      store.commit('updateTest')
-      console.log('updateTest: ' + store.state.test)
-      this.$Message.info(`updateTest: ${store.state.test}`)
+      this.$store.commit('updateTest')
+      console.log('updateTest: ' + this.$store.state.test)
+      this.$Message.info(`updateTest: ${this.$store.state.test}`)
     },
     initialTest() {
-      store.commit('initialTest')
-      console.log('initialTest: ' + store.state.test)
-      this.$Message.info(`initialTest: ${store.state.test}`)
+      this.$store.commit('initialTest')
+      console.log('initialTest: ' + this.$store.state.test)
+      this.$Message.info(`initialTest: ${this.$store.state.test}`)
     }
   }
 }

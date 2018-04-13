@@ -7,6 +7,12 @@
     <p>
       发现有时候使用 this.$router.push() 或 router-link 也会报很多[Vue warn]
     </p>
+    <p>
+      - 原因：引入 vue 的时候用了 ```import Vue from 'vue/dist/vue.esm' ```
+    </p>
+    <p>
+      - 解决：改成 ```import Vue from 'vue' ```, 问题就解决了。[惊讶](原理暂时不是很清楚)
+    </p>
   </div>
 </template>
 
