@@ -1,6 +1,10 @@
 # Rails-webpacker-vue demo
 
-rails + webpacker + vue + iview + vuex + vue-router + vue-resource
+rails + webpacker + vue + iview + vuex
+
+## vuex problem
+
+the demo is in: localhost:3000/
 
 ## 环境
 Ruby version: 2.4.1
