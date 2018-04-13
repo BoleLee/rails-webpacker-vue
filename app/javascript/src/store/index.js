@@ -5,15 +5,14 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-    test: '初始值'
+    test: 'test value',
+    count: 0
   },
   mutations: {
-    updateTest (state, value) {
-      state.test = value
-    },
-  },
-  actions: {
-
+    updateTest: state => state.test = 'new test value',
+    initialTest: state => state.test = 'initial test value',
+    increment: state => state.count++,
+    decrement: state => state.count--
   }
 })
 

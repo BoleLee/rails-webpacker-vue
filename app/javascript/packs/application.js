@@ -10,31 +10,31 @@
 console.log('Hello World from Webpacker')
 
 
-import TurbolinksAdapter from 'vue-turbolinks'
-import Vue from 'vue/dist/vue.esm'
-import iView from 'iview'
-import 'iview/dist/styles/iview.css'
-import Vuex from 'vuex'
-import VueRouter from 'vue-router'
-import VueResource from 'vue-resource'
-import App from '../app.vue'
-import router from '../src/router'
-import store from '../src/store'
+// import TurbolinksAdapter from 'vue-turbolinks'
+// import Vue from 'vue/dist/vue.esm'
+// import iView from 'iview'
+// import 'iview/dist/styles/iview.css'
+// import Vuex from 'vuex'
+// import VueRouter from 'vue-router'
+// import VueResource from 'vue-resource'
+// import App from '../app.vue'
+// import router from '../src/router'
+// import store from '../src/store'
 
-Vue.use(iView)
-Vue.use(Vuex)
-Vue.use(VueRouter)
-Vue.use(VueResource)
-Vue.use(TurbolinksAdapter)
+// Vue.use(iView)
+// Vue.use(Vuex)
+// Vue.use(VueRouter)
+// Vue.use(VueResource)
+// Vue.use(TurbolinksAdapter)
 
-Vue.http.headers.common['Content-Type'] = `application/json`
+// Vue.http.headers.common['Content-Type'] = `application/json`
 
-document.addEventListener("turbolinks:load", function() {
+// document.addEventListener("turbolinks:load", function() {
 
-  const app = new Vue({
-    el: '#app',
-    router: router,
-    store: store,
-    render: h => h(App)
-  })
-})
+//   const app = new Vue({
+//     el: '#app',
+//     router: router,
+//     // store: store,
+//     render: h => h(App)
+//   })
+// })
