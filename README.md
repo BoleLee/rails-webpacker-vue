@@ -4,7 +4,11 @@ rails + webpacker + vue + iview + vuex
 
 ## vuex problem
 
-the demo is in: localhost:3000/
+[http://localhost:3000](http://localhost:3000)
+
+## iview problem
+
+[http://localhost:3000/iview](http://localhost:3000/iview)
 
 ## 环境
 Ruby version: 2.4.1
